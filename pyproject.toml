@@ -13,7 +13,7 @@ license-files = ["LICENSE.md"]
 requires-python = ">=3.10,<4.0"
 dependencies = [
     "gevent>=1.5",
-    "paramiko>=2.11,<5", # 2.11 (2022) adds Transport.open_channel(timeout=...) for ProxyJump timeout (#971)
+    "paramiko>=2.11,<6", # 2.11 (2022) adds Transport.open_channel(timeout=...) for ProxyJump timeout (#971)
     "click>2",
     "jinja2>3,<4",
     "python-dateutil>2,<3",
@@ -50,7 +50,7 @@ repository = "https://github.com/pyinfra-dev/pyinfra"
 [dependency-groups]
 test = [
     "click>=8.2",
-    "pytest>=8.3.5,<9",
+    "pytest>=8.3.5,<10",
     "coverage>=7.7.1,<8",
     "pytest-cov>=7.0.0,<8",
     "pytest-testinfra>=10.2.2,<11",
